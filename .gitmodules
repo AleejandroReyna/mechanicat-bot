@@ -1,0 +1,3 @@
+[submodule "statics/Adminator-admin-dashboard"]
+	path = statics/Adminator-admin-dashboard
+	url = https://github.com/puikinsh/Adminator-admin-dashboard
