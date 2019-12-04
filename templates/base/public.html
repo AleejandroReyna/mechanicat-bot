@@ -7,11 +7,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}Mechanicat Bot{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'shards-ui/dist/css/shards.min.css' %}">
 </head>
 <body>
     {% include 'base/public_navbar.html' %}
     {% block content %}{% endblock %}
 </body>
+<script src="{% static 'jquery/jquery-3.3.1.slim.min.js' %}"></script>
+<script src="{% static 'bootstrap/bootstrap.min.js' %}"></script>
 <script src="{% static 'shards-ui/dist/js/shards.min.js' %}"></script>
 </html>
