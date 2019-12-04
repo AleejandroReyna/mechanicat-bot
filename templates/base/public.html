@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'shards-ui/dist/css/shards.min.css' %}">
 </head>
 <body>
+    {% include 'base/public_navbar.html' %}
     {% block content %}{% endblock %}
 </body>
 <script src="{% static 'shards-ui/dist/js/shards.min.js' %}"></script>
