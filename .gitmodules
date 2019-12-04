@@ -7,3 +7,6 @@
 [submodule "statics/jquery"]
 	path = statics/jquery
 	url = https://github.com/jquery/jquery
+[submodule "statics/bootstrap"]
+	path = statics/bootstrap
+	url = https://github.com/twbs/bootstrap
