@@ -1,0 +1,28 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mechanicat Bot | {% block title %}Home{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'Adminator-admin-dashboard/build/style.css' %}">
+</head>
+<body class="app">
+    <div>
+        <div class="sidebar">
+            <div class="sidebar-inner">
+                {% include 'base/private/sidebar-logo.html' %}
+                {% include 'base/private/sidebar-menu.html' %}
+            </div>
+        </div>
+        <div class="page-container">
+            {% include 'base/general/alerts.html' %}
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</body>
+    <script src="{% static 'Adminator-admin-dashboard/build/vendor.js' %}"></script>
+    <script src="{% static 'Adminator-admin-dashboard/build/bundle.js' %}"></script>
+</html>

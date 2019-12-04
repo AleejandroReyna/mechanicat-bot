@@ -6,3 +6,5 @@ __pycache__/
 *.env
 statics/Adminator-admin-dashboard/
 statics/shards-ui
+
+.DS_Store

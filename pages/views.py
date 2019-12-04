@@ -44,3 +44,7 @@ class SignUpView(CreateView):
     def get_success_url(self):
         messages.success(self.request, "Your account has been created.")
         return super(SignUpView, self).get_success_url()
+
+
+class DashboardView(TemplateView):
+    template_name = 'pages/dashboard.html'
