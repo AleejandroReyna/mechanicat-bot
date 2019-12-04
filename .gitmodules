@@ -4,3 +4,6 @@
 [submodule "statics/shards-ui"]
 	path = statics/shards-ui
 	url = https://github.com/DesignRevision/shards-ui
+[submodule "statics/jquery"]
+	path = statics/jquery
+	url = https://github.com/jquery/jquery
