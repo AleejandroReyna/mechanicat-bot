@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
-  <a class="navbar-brand" href="#">Mechanicat Bot</a>
+  <a class="navbar-brand" href="{% url 'pages:home' %}">Mechanicat Bot</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-1" aria-controls="navbarNavDropdown-1"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -7,11 +7,11 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown-1">
     <ul class="navbar-nav ml-auto">
         {% if not request.user.is_authenticated %}
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#">Sign Up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="{% url 'pages:login' %}">Login</a>
           </li>
         {% else %}
           <li class="nav-item dropdown">
@@ -26,7 +26,7 @@
             </div>
           </li>
           <li>
-              <a class="nav-link" href="#">Logout</a>
+              <a class="nav-link" href="{% url 'pages:logout' %}">Logout</a>
           </li>
         {% endif %}
     </ul>

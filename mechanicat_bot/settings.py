@@ -136,3 +136,6 @@ MESSAGE_TAGS = {
     40: 'alert-danger'
 }
 
+LOGIN_REDIRECT_URL = '/dashboard/'
+LOGOUT_REDIRECT_URL = ''
+

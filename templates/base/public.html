@@ -6,12 +6,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block title %}Mechanicat Bot{% endblock %}</title>
+    <title>Mechanicat Bot | {% block title %}Home{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'shards-ui/dist/css/shards.min.css' %}">
 </head>
 <body>
     {% include 'base/public_navbar.html' %}
+    {% include 'base/alerts.html' %}
     {% block content %}{% endblock %}
 </body>
 <script src="{% static 'jquery/jquery-3.3.1.slim.min.js' %}"></script>
